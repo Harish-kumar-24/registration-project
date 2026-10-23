@@ -14,15 +14,7 @@ const form = document.getElementById('registrationForm');
       alertBox.className = 'alert fade show'; // Clear previous alert colors
 
       // Validation logic
-      if (!name || !email || !password) {
-        showNotification('Please fill in all required fields.', 'alert-danger');
-      } else if (password.length < 6) {
-        showNotification('Password must be at least 6 characters long.', 'alert-warning');
-      } else {
-        showNotification(`Welcome, ${name}! Registration successful.`, 'alert-success');
-        form.reset(); // Clear form inputs on success
-      }
-    });
+          });
 
     function showNotification(message, alertType) {
       alertMessage.textContent = message;
